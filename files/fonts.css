@@ -1,0 +1,60 @@
+ @font-face {
+font-family: "raggmoppnf-webfont";
+src: url("raggmoppnf-webfont.eot?") format("eot"),
+url("raggmoppnf-webfont.woff") format("woff"),
+url("raggmoppnf-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "mayflowerantique-webfont";
+  src: url("mayflowerantique-webfont.eot?") format("eot"),
+  url("mayflowerantique-webfont.woff") format("woff"),
+  url("mayflowerantique-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "dis-webfont";
+  src: url("dis-webfont-webfont.eot?") format("eot"),
+  url("dis-webfont-webfont.woff") format("woff"),
+  url("dis-webfont-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "crom_v1-webfont";
+  src: url("crom_v1-webfont.eot?") format("eot"),
+  url("crom_v1-webfont.woff") format("woff"),
+  url("crom_v1-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "beta54-webfont";
+  src: url("beta54-webfont.eot?") format("eot"),
+  url("beta54-webfont.woff") format("woff"),
+  url("beta54-webfont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ac_brodie-webfont";
+  src: url("ac_brodie-webfont.eot?") format("eot"),
+  url("ac_brodie-webfont.woff") format("woff"),
+  url("ac_brodie-webfont.ttf") format("truetype");
+}
+
+.ragg{
+    font-family: "raggmoppnf-webfont" !important;
+}
+.mayflower{
+    font-family: "mayflowerantique-webfont" !important;
+}
+.dis{
+    font-family: "dis-webfont" !important;
+}
+.crom{
+    font-family: "crom_v1-webfont" !important;
+}
+.beta54{
+    font-family: "beta54-webfont" !important;
+}
+.ac_brodie{
+   font-family: "ac_brodie-webfont" !important; 
+}

@@ -1,0 +1,210 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Nov 30, 2014, 12:45:56 PM
+   
+*/
+@charset "utf-8";
+/* Simple fluid media
+   Note: Fluid media requires that you remove the media's height and width attributes from the HTML
+   http://www.alistapart.com/articles/fluid-images/ 
+*/
+img, object, embed, video {
+	max-width: 100%;
+        }
+/* IE 6 does not support max-width so default to width 100% */
+.ie6 img {
+	width:100%;
+}
+
+.banner {
+min-width: 800px;
+}
+.logo{
+  display: inline-block;
+ min-width: 350px;
+}
+.smaller{
+  display: inline-block;
+  width: 150px;
+  margin: .5em;
+}
+.fontTextArea{
+ width:100%;
+ font-size:x-large;
+ color: black;
+ background:white;
+ padding:5px;
+ height:1.5em;
+}
+.fontTextArea2{
+ font-size:x-large;
+ color: black;
+ background:white;
+ padding-left:8px;
+ padding-right:8px;
+ padding-bottom:3px;
+ padding-top:3px;
+ height:1.7em;
+ margin-right: 20px;
+ margin-left: 5px;
+ margin-bottom: 10px;
+ vertical-align: middle ;
+ min-width: 150px;
+}
+
+@media(min-width:632px) {
+    .fontTextArea2{
+        width:33%;    
+ }
+}
+ @media (max-width:632px) {
+    .fontTextArea2{
+        width:85%;    
+ }
+ }
+
+
+.gridContainer {
+	margin-left: auto;
+	margin-right: auto;
+	width: 95%;
+	padding-left: 1.82%;
+	padding-right: 1.82%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+
+/* Tablet Layout: 481px to 768px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 481px) {
+.gridContainer {
+	width: 95%;
+	padding-left: 1.1625%;
+	padding-right: 1.1625%;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+
+/*----- Tabs -----*/
+.tabs {
+    width:95%;
+    padding-top: 13px;
+padding-bottom: 13px;
+padding-left: 5px;
+padding-right: 5px;
+   /* min-width: 600px;*/
+    display:inline-block;
+    background:#6a6a6a;
+       -webkit-border-radius: 5px;
+ -moz-border-radius: 5px;
+ border-radius: 5px;
+ box-shadow: 5px 5px 5px #696969;
+}
+ 
+    /*----- Tab Links -----*/
+    /* Clearfix */
+    .tab-links:after {
+        display:block;
+        clear:both;
+        content:'';
+    }
+    .tab-links ul{
+        vertical-align: bottom;
+    }
+    .tab-links li {
+        margin:0px 5px;
+        display:inline-block;
+        list-style:none;
+        vertical-align: bottom;
+    }
+ 
+        .tab-links a {
+             text-decoration: none;
+            padding:9px 15px;
+            display:inline-block;
+            border-radius:3px 3px 0px 0px;
+            background:#b2b2b2;
+            font-size:14px;
+            font-weight:600;
+            color:#ffffff;
+            transition:all linear 0.15s;
+            
+        }
+ 
+        .tab-links a:hover {
+            background:#a7cce5;
+            text-decoration:none;
+        }
+ 
+    li.active a, li.active a:hover {
+        background:#fff;
+        color:#000000;
+        font-size:20px;
+    }
+ 
+    /*----- Content of Tabs -----*/
+    .tab-content {
+        padding:15px;
+        border-radius:3px;
+        box-shadow:-1px 1px 1px rgba(0,0,0,0.15);
+        background:#fff;
+		text-align: center;
+    }
+ 
+        .tab {
+            display:none;
+        }
+ 
+        .tab.active {
+            display:block;
+            text-align: center;
+        }
+
+/* Desktop Layout: 769px to a max of 1232px.  Inherits styles from: Mobile Layout and Tablet Layout. */
+
+@media only screen and (min-width: 769px) {
+.gridContainer {
+	width: 95%;
+	max-width: 1232px;
+	padding-left: 0.9%;
+	padding-right: 0.9%;
+	margin: auto;
+}
+#LayoutDiv1 {
+	clear: both;
+	float: left;
+	margin-left: 0;
+	width: 100%;
+	display: block;
+}
+}
+.colorpics {
+    width:55px;
+}
+#colors{
+    text-align:center;
+    width:100%; 
+    margin:auto;
+}
+#TextInputArea{
+    text-align:left;
+}
+#stepInfo {
+    color:#ff0000;
+    text-align:center;
+} 
